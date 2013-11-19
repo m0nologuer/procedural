@@ -39,7 +39,7 @@ public:
   static void meshFromFile(char* filename, Mesh* out_mesh);
   static void concatenate(Mesh* meshArray, int mesh_count, Mesh* out_mesh);
 
-  static void makeDune(double intensity, double twistedness, int sample_rate, Mesh* out_mesh);xw
+  static void makeDune(double intensity, double twistedness, int sample_rate, Mesh* out_mesh);
   static void makeCactus(double thickness, Eigen::Vector3d center, Mesh* out_mesh);
   static void makePetal(double width, double height, double pointiness, Mesh* out_mesh);
   static void makeFlower(int count, double width, double height, double center, double spacing, double pointiness_min, 

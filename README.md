@@ -1,23 +1,16 @@
-Annealing
-========
-Usage: ./anneal file1.obj file2.obj 
-The output file is written to output_file.obj
+Generates a 3D mesh of a flower given certain parameters.
+Usage:
+./anneal [petal_count] [height] [curviness] [output_file]
 
-Issues
-=========
-Crashes on loading some meshes.
-Annealing speed may need to be slowed
+Petal_count ranges from about 20-60
+Height from 0.5 to 5
+Curivness from 0.3 to 1
 
-Defines
-========
+Output_file is just a name
 
-These are defined in main.cpp. Perhaps they should be moved out into a json config file.
 
-define GAP 0.4 - minimum spacing in mm between two objects in the annealing process
-define PADDING 50.0f - minimim starting distance from an object to the edge of the box
-define PERCENT_TRANSLATION 0.45f - how much should we translate one object, as a percentage of max_distance
-define PERCENT_ROTATION 0.45f - how much should we rotate one object, as a percentage of max_distance
-define ITERATIONS 1000 - iterations for the annealing process
-define SPACING 20 - starting spacing between objects
-define CUBE_SHRINKAGE_RATE 0.01 - how much smaller should the cube become
+Examples of flowers:
 
+./anneal 40 3.8 0.5 sunflower.obj
+./anneal 40 1.8 1.0 tulip.obj
+./anneal 40 1.0 0.5 lotus.obj
